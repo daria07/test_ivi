@@ -1,0 +1,51 @@
+*,
+::after,
+::before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 100vh;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+#figure {
+  position: relative;
+  width: 12vw;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  border-bottom: 4vw solid #e72044;
+  border-left: 3vw solid transparent;
+  border-right: 3vw solid transparent;
+  cursor: pointer;
+}
+#figure:before {
+  content: "";
+  position: absolute;
+  height: 0;
+  width: 0;
+  bottom: -12vw;
+  left: -3vw;
+  border-left: 9vw solid transparent;
+  border-right: 9vw solid transparent;
+  border-top: 8vw solid #e72044;
+}
+#count {
+  color: white;
+  position: absolute;
+  font-size: 10vw;
+  left: -2vw;
+  line-height: 1.1;
+  width: 16vw;
+  text-align: center;
+}
